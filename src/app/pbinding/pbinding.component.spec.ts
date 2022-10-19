@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventBindingComponent } from './event-binding.component';
+import { PbindingComponent } from './pbinding.component';
 
-describe('EventBindingComponent', () => {
-  let component: EventBindingComponent;
-  let fixture: ComponentFixture<EventBindingComponent>;
+describe('PbindingComponent', () => {
+  let component: PbindingComponent;
+  let fixture: ComponentFixture<PbindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EventBindingComponent ]
+      declarations: [ PbindingComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EventBindingComponent);
+    fixture = TestBed.createComponent(PbindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

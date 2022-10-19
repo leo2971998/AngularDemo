@@ -4,29 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
-import { PropertyBindingComponent } from './property-binding/property-binding.component';
-import { ClassBindingComponent } from './class-binding/class-binding.component';
-import { EventBindingComponent } from './event-binding/event-binding.component';
-import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { PbindingComponent } from './pbinding/pbinding.component';
+import { CbindingComponent } from './cbinding/cbinding.component';
+import { EbindingComponent } from './ebinding/ebinding.component';
+import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
 import { FormsModule } from '@angular/forms';
-import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
-import { NewComponentComponent } from './new-component/new-component.component';
-import {EmployeeListComponent} from "./employee-list/employee-list.component";
+import { StructralDirectivesComponent } from './structral-directives/structral-directives.component';
+import { TestComponent } from './test/test.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        SampleComponent,
-        PropertyBindingComponent,
-        ClassBindingComponent,
-        EventBindingComponent,
-        TwoWayBindingComponent,
-        StructuralDirectiveComponent,
-        NewComponentComponent,
-        EmployeeListComponent,
-    ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    SampleComponent,
+    PbindingComponent,
+    CbindingComponent,
+    EbindingComponent,
+    TwowayBindingComponent,
+    StructralDirectivesComponent,
+    TestComponent,
+    EmployeeListComponent,
+      ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
